@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Bodega - Empório</title>
+
+  <!-- Favicon (figurinha em cima no navegador) -->
+  <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon" />
+
+  <!-- Link do CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Fontes do google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- Imagens -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+</head>
+
+<body id="top">
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="" class="logo">
+        <img src="./assets/images/labodega.png">
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Eventos" class="navbar-link" data-nav-link>Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#CATALOGO" class="navbar-link" data-nav-link>Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Endereço</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="btn btn-hover">Faça sua reserva</button>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" CATALOGO-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- #SEARCH BOX -->
+  <div class="search-container" data-search-container>
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+  </div>
+
+  <main>
+    <article>
+      <!-- #HERO -->
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title"><span>La Bodega</span>, o melhor empório da cidade!</h2>
+            <p class="hero-text">Faça sua reserva e venha nos conhecer</p>
+            <button class="btn">ESCOLHA SEUS PRODUTOS</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section section-divider gray banner" id="Eventos">
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li class="banner-item banner-lg">
+              <div class="banner-card">
+
+                <img src="./assets/images/banner-1.jpg" width="550" height="450" loading="lazy"
+                  alt="Discount For Delicious Tasty Burgers!" class="banner-img">
+
+                <div class="banner-item-content">
+                  <p class="banner-subtitle">50% de desconto!</p>
+
+                  <h3 class="banner-title">Para todos os doces da casa!</h3>
+
+                  <p class="banner-text">Valor promocional apenas esta semana</p>
+
+                  <button class="btn">COMPRAR</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-sm">
+              <div class="banner-card">
+
+                <img src="./assets/images/banner-2.jpg" width="550" height="465" loading="lazy" alt="Delicious Pizza"
+                  class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Pizza da casa</h3>
+
+                  <p class="banner-text">50% de desconto</p>
+
+                  <button class="btn">COMPRAR</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-sm">
+              <div class="banner-card">
+
+                <img src="./assets/images/banner-3.jpg" width="550" height="465" loading="lazy" alt="American Burgers"
+                  class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Hamburguer artesanal</h3>
+
+                  <p class="banner-text">50% de desconto</p>
+
+                  <button class="btn">COMPRAR</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-md">
+              <div class="banner-card">
+
+                <img src="./assets/images/banner-4.jpg" width="550" height="220" loading="lazy" alt="Tasty Buzzed Pizza"
+                  class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Pizza suprema</h3>
+
+                  <p class="banner-text">Desconto de 50% só hoje!</p>
+
+                  <button class="btn">COMPRAR</button>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- #PROMO -->
+      <section class="section section-divider white promo">
+        <div class="container">
+          <ul class="promo-list has-scrollbar">
+            <li class="promo-item">
+              <div class="promo-card">
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
+                    xmlns:v="https://vecta.io/nano">
+                    <g clip-path="url(#A)" fill="#ff9d2d">
+                      <path
+                        d="M14.837 40.062c0 3.106 2.528 5.634 5.634 5.634s5.634-2.528 5.634-5.634a5.64 5.64 0 0 0-5.634-5.634c-3.106 0-5.634 2.527-5.634 5.634zm5.634-3.876a3.88 3.88 0 0 1 3.876 3.876 3.88 3.88 0 0 1-3.876 3.876 3.88 3.88 0 0 1-3.876-3.876 3.88 3.88 0 0 1 3.876-3.876zm4.22-20.523l-.2-9.292a1.6 1.6 0 0 0 1.089-1.514V1.599A1.6 1.6 0 0 0 23.981 0H16.96a1.6 1.6 0 0 0-1.599 1.599v3.259a1.6 1.6 0 0 0 1.09 1.514l-.201 9.292a10.3 10.3 0 0 1-2.194 6.117c-1.659 2.107-2.573 4.744-2.573 7.426v27.741A3.06 3.06 0 0 0 14.538 60h11.866a3.06 3.06 0 0 0 3.053-3.053v-27.74a12.06 12.06 0 0 0-2.573-7.426 10.3 10.3 0 0 1-2.194-6.117zM17.119 1.758h6.703v2.941h-6.703V1.758zm5.695 8.398h-4.687l.08-3.7h4.527l.08 3.7zM27.7 56.947a1.3 1.3 0 0 1-1.296 1.295H14.538c-.715 0-1.295-.581-1.295-1.295v-7.978H27.7v7.978zm0-25.703h-8.55a.88.88 0 0 0-.879.878.88.88 0 0 0 .879.879h8.55v14.21H13.242v-14.21h1.819a.88.88 0 0 0 .878-.879.88.88 0 0 0-.878-.878h-1.819v-2.037a10.29 10.29 0 0 1 2.196-6.338c1.602-2.034 2.514-4.579 2.57-7.167l.082-3.787h4.762l.081 3.787a12.08 12.08 0 0 0 2.57 7.167 10.29 10.29 0 0 1 2.196 6.338v2.037zm20.876-12.638c0-1.069-.567-2.026-1.438-2.519-.186-1.394-1.338-2.471-2.727-2.471a2.66 2.66 0 0 0-1.289.334 2.61 2.61 0 0 0-.274-.089c-.193-1.385-1.341-2.453-2.724-2.453-.896 0-1.721.456-2.23 1.188l-.226-.01c-1.262 0-2.34.894-2.658 2.119a2.8 2.8 0 0 0-1.113 1.131c-1.179.329-2.037 1.45-2.037 2.78.001.218.047.432.132.631l-.003.052v1.757a64.33 64.33 0 0 0 1.632 14.388l.141.613c1.294 5.63 1.871 9.946 1.871 13.995v4.586a.54.54 0 0 1-.038.201c-.004.008-.01.016-.013.024a.54.54 0 0 1-.196.23l-1.491.966c-.515.334-.822.899-.822 1.512v.625a1.71 1.71 0 0 0 .007.15c.002.026.005.051.008.077.001.007.001.014.002.022.002.015.005.028.008.043l.016.092a1.66 1.66 0 0 0 .034.133c.014.045.028.083.043.122.006.016.011.032.018.048a1.57 1.57 0 0 0 .055.119c.006.012.012.025.018.038a1.67 1.67 0 0 0 .07.119c.006.01.012.021.018.03.025.038.052.073.079.109.009.01.016.022.025.032.025.031.051.059.078.088.013.015.026.029.039.043a1.42 1.42 0 0 0 .07.065c.024.021.04.038.06.055s.037.028.055.042a1.37 1.37 0 0 0 .086.064c.015.01.031.019.046.028.03.019.059.039.091.056a2.17 2.17 0 0 0 .105.054c.023.011.045.022.066.031a1.83 1.83 0 0 0 .08.031 1.92 1.92 0 0 0 .088.031 1.73 1.73 0 0 0 .086.023c.029.008.059.016.085.021a1.58 1.58 0 0 0 .103.017 1.43 1.43 0 0 0 .076.011 1.94 1.94 0 0 0 .101.006 1.18 1.18 0 0 0 .08.003L45.561 60c.031-.001.058-.001.087-.003s.059-.003.088-.006a1.07 1.07 0 0 0 .087-.011c.034-.005.068-.01.098-.016h0c.035-.008.058-.013.078-.019.032-.008.065-.016.098-.027.02-.006.039-.013.059-.021a1.38 1.38 0 0 0 .103-.039c.015-.006.031-.013.045-.02s.026-.014.04-.021a2.01 2.01 0 0 0 .105-.054c.023-.013.046-.027.069-.042a1.93 1.93 0 0 0 .081-.054 1.46 1.46 0 0 0 .075-.056 2.01 2.01 0 0 0 .064-.053 1.78 1.78 0 0 0 .076-.069c.018-.017.035-.036.052-.054.024-.026.049-.052.071-.079.016-.019.031-.039.047-.059.021-.028.043-.054.062-.083s.033-.052.049-.079.031-.049.045-.074a1.77 1.77 0 0 0 .144-.342 1.62 1.62 0 0 0 .036-.14c.006-.029.011-.059.016-.089.002-.016.006-.031.008-.047l.003-.022.008-.075a1.68 1.68 0 0 0 .008-.15v-.624c0-.613-.307-1.178-.821-1.511l-.553-.358-.94-.609c-.035-.027-.083-.076-.132-.151a1.28 1.28 0 0 1-.047-.084c-.041-.081-.069-.163-.069-.22v-4.585c0-4.048.577-8.364 1.871-13.995l.141-.613a64.33 64.33 0 0 0 1.632-14.388V19.3c0-.018-.002-.035-.003-.052a1.63 1.63 0 0 0 .132-.626v-.016zm-14.012-1.108a.88.88 0 0 0 .792-.617c.108-.352.366-.618.688-.712a.88.88 0 0 0 .63-.79c.035-.58.471-1.033.993-1.033a.9.9 0 0 1 .35.071.88.88 0 0 0 1.174-.527c.145-.425.528-.722.932-.722.549 0 .995.498.995 1.109a1.23 1.23 0 0 1-.021.226.88.88 0 0 0 .968 1.036c.222-.026.438.029.625.159a.88.88 0 0 0 1.095-.073c.178-.163.395-.249.626-.249.549 0 .996.498.996 1.109a1.16 1.16 0 0 1-.005.114.88.88 0 0 0 .65.93c.219.058.408.198.544.386h-12.76c.173-.239.432-.398.728-.414h0zm10.634 39.787l.388.251c.006.004.011.01.015.016l.005.021v.619l-.001.013c-.003.011-.006.016-.009.02l-.052.017H34.892l-.02-.001-.022-.006c-.011-.008-.016-.017-.019-.031l-.001-.63c0-.015.007-.029.02-.037l1.491-.967a2.52 2.52 0 0 0 .135-.095l.023-.018a2.11 2.11 0 0 0 .111-.092c.097-.087.176-.168.248-.254h6.737a3.35 3.35 0 0 0 .102.118l.034.037c.026.026.051.052.078.077.013.013.027.025.041.038a1.97 1.97 0 0 0 .081.07l.039.032a1.81 1.81 0 0 0 .114.081l1.113.722zm1.491-36.227l-.018 1.463h-7.669a.88.88 0 0 0-.879.879.88.88 0 0 0 .879.879h7.603a62.7 62.7 0 0 1-1.502 10.774l-.141.613c-1.325 5.765-1.915 10.202-1.915 14.388v4.299H37.39v-4.299c0-4.187-.591-8.624-1.915-14.388l-.141-.613a62.6 62.6 0 0 1-1.503-10.774h1.08a.88.88 0 0 0 .879-.879.88.88 0 0 0-.879-.879h-1.146l-.019-1.463v-1.387h12.942v1.387z" />
+                      <defs>
+                        <clipPath id="A">
+                          <path fill="#fff" d="M0 0h60v60H0z" />
+                        </clipPath>
+                      </defs>
+                  </svg>
+                </div>
+                <h3 class="h3 card-title">Bebidas</h3>
+                <p class="card-text">
+                  O Brasil é famoso por sua caipirinha, uma bebida alcoólica feita com cachaça, limão e açúcar. Além
+                  disso, o país produz café de alta qualidade e possui uma crescente indústria de cervejas artesanais.
+                </p>
+                <img src="./assets/images/promo-1.png" width="300" height="300" loading="lazy" alt="Maxican Pizza"
+                  class="w-100 card-banner">
+              </div>
+            </li>
+            <li class="promo-item">
+              <div class="promo-card">
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
+                    xmlns:v="https://vecta.io/nano">
+                    <g clip-path="url(#A)" fill="#ff9d2d">
+                      <path
+                        d="M43.033.002L42.563 0c-7.896 0-15.555 1.546-22.767 4.597-6.965 2.946-13.22 7.163-18.592 12.535l-.043.044c-1.548 1.551-1.546 4.075.004 5.625l2.256 2.257c.754.754 1.76 1.17 2.832 1.17h.001a3.98 3.98 0 0 0 2.834-1.171l.04-.04a1.7 1.7 0 0 1 1.21-.499h.021a1.73 1.73 0 0 1 1.238.537l4.596 4.807c.466.488 1.095.761 1.768.768h.028c.663 0 1.285-.258 1.756-.729.975-.975.993-2.58.04-3.577l-3.308-3.46c-.295-.309-.311-.797-.035-1.087a.76.76 0 0 1 .554-.239h.001a.76.76 0 0 1 .553.236l1.041 1.09c.95.994 2.49 1.079 3.507.195a2.5 2.5 0 0 0 .865-1.787 2.53 2.53 0 0 0-.696-1.858l-.755-.79a1.72 1.72 0 0 1-.454-1.511c.099-.549.444-1.003.944-1.245a46.86 46.86 0 0 1 20.561-4.69l.419.002c1.07.011 2.07-.399 2.827-1.149a3.96 3.96 0 0 0 1.179-2.828V3.984A4 4 0 0 0 43.033.002h0zm2.2 7.199a2.21 2.21 0 0 1-.659 1.581 2.18 2.18 0 0 1-1.575.641l-.435-.002a48.6 48.6 0 0 0-21.325 4.865A3.44 3.44 0 0 0 19.33 16.8a3.46 3.46 0 0 0 .912 3.037l.756.79a.76.76 0 0 1-.052 1.106c-.303.263-.789.226-1.085-.083l-1.041-1.089a2.53 2.53 0 0 0-1.822-.779 2.5 2.5 0 0 0-1.827.784c-.929.976-.912 2.518.037 3.512l3.308 3.46a.82.82 0 0 1-.012 1.121.74.74 0 0 1-.523.215c-.197-.002-.381-.083-.519-.226l-4.596-4.808a3.47 3.47 0 0 0-2.487-1.08h-.042a3.44 3.44 0 0 0-2.449 1.011l-.014.014-.009.009-.022.022c-.423.423-.988.656-1.591.656s-1.168-.232-1.591-.655L2.404 21.56a2.23 2.23 0 0 1 0-3.145l.042-.042A56.54 56.54 0 0 1 20.48 6.214c6.994-2.958 14.423-4.458 22.083-4.458l.454.002h0a2.24 2.24 0 0 1 2.215 2.226v3.218zm-.908 6.202a.88.88 0 0 0-.878.878v43.292c0 .412-.314.574-.411.614s-.433.147-.724-.144L11.436 27.166a.88.88 0 0 0-1.242 0 .88.88 0 0 0 0 1.242l30.877 30.877c.469.469 1.073.715 1.696.715.314 0 .633-.063.942-.19a2.38 2.38 0 0 0 1.494-2.237V14.281a.88.88 0 0 0-.878-.878h0zm-6.657-1.125c-2.112 0-3.83 1.718-3.83 3.83s1.718 3.83 3.83 3.83 3.83-1.718 3.83-3.83-1.718-3.83-3.83-3.83zm0 5.903c-1.143 0-2.074-.93-2.074-2.074s.93-2.073 2.074-2.073 2.073.93 2.073 2.073-.93 2.074-2.073 2.074zM22.575 34.938a3.55 3.55 0 0 0 3.547 3.547 3.55 3.55 0 0 0 3.547-3.547 3.55 3.55 0 0 0-3.547-3.547 3.55 3.55 0 0 0-3.547 3.547h0zm3.547-1.791c.987 0 1.791.803 1.791 1.791s-.803 1.791-1.791 1.791-1.791-.803-1.791-1.791.804-1.791 1.791-1.791zm12.81-2.283a3.68 3.68 0 0 0-3.672 3.672 3.68 3.68 0 0 0 3.672 3.672 3.68 3.68 0 0 0 3.672-3.672 3.68 3.68 0 0 0-3.672-3.672zm0 5.588a1.92 1.92 0 0 1-1.916-1.915 1.92 1.92 0 0 1 1.916-1.916 1.92 1.92 0 0 1 1.915 1.916 1.92 1.92 0 0 1-1.915 1.915zm2.97 8.702a3.92 3.92 0 0 0-3.913-3.912h-.645a3.92 3.92 0 0 0-3.913 3.912 1.7 1.7 0 0 0 1.697 1.697h.23l-.037.687a1.57 1.57 0 0 0 .427 1.16c.294.31.709.488 1.136.488h1.562a1.57 1.57 0 0 0 1.136-.488c.294-.31.45-.733.428-1.16l-.037-.687h.23a1.7 1.7 0 0 0 1.697-1.697h0zm-2.515-.059a1.2 1.2 0 0 0-.87.374c-.225.238-.345.562-.327.889l.057 1.073h-1.16l.057-1.073a1.2 1.2 0 0 0-1.198-1.263h-.758a2.16 2.16 0 0 1 2.156-2.097h.645a2.16 2.16 0 0 1 2.155 2.097h-.758zm-9.689-26.32a4.46 4.46 0 0 0-4.454 4.455v.76a4.46 4.46 0 0 0 4.454 4.455c1.017 0 1.844-.827 1.844-1.843v-.437l.975.052a1.69 1.69 0 0 0 1.251-.46c.335-.318.526-.764.526-1.225v-1.841c0-.461-.192-.908-.526-1.225s-.792-.485-1.251-.46l-.975.052v-.437c0-1.017-.827-1.844-1.844-1.844zm2.84 3.986v1.697l-1.43-.076c-.344-.017-.682.107-.931.343s-.392.569-.392.912v.963c0 .049-.039.087-.087.087A2.7 2.7 0 0 1 27 23.99v-.761a2.7 2.7 0 0 1 2.698-2.698c.048 0 .087.039.087.087v.964c0 .343.143.676.392.912a1.26 1.26 0 0 0 .931.343l1.43-.076z" />
+                    </g>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="h3 card-title">Alimentos</h3>
+                <p class="card-text">
+                  O Brasil é um grande produtor e exportador de alimentos, com uma variedade de frutas, grãos, carnes e
+                  produtos agrícolas. A diversidade culinária reflete a riqueza cultural do país.
+                </p>
+                <img src="./assets/images/promo-2.png" width="300" height="300" loading="lazy" alt="Soft Drinks"
+                  class="w-100 card-banner">
+              </div>
+            </li>
+            <li class="promo-item">
+              <div class="promo-card">
+                <div class="card-icon">
+                  <svg width="60px" height="60px" fill="none" viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#ff9d2d">
+                      <path
+                        d="M225.28 588.065V368.929c0-5.657 4.583-10.24 10.24-10.24h143.36c5.657 0 10.24 4.583 10.24 10.24v219.136c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V368.929c0-28.278-22.922-51.2-51.2-51.2H235.52c-28.278 0-51.2 22.922-51.2 51.2v219.136c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48zm446.628-102.78l-.005-.066.005.066zM815.463 311.1l-.003.048.003-.048zm-11.449 160.232l10.244-143.36H660.667l10.244 143.36h133.103zm39.861 16.83c-.988 13.533-12.36 24.13-25.917 24.13H656.965c-13.566 0-24.98-10.621-25.917-24.13l-12.439-174.08c-1.072-14.684 10.474-27.07 25.177-27.07h187.351c14.703 0 26.249 12.387 25.179 27.039l-12.442 174.111z" />
+                      <path
+                        d="M419.84 982.305c5.657 0 10.24-4.583 10.24-10.24v-337.92c0-5.657-4.583-10.24-10.24-10.24H204.8c-11.309 0-20.48 9.171-20.48 20.48v327.68c0 5.657 4.583 10.24 10.24 10.24h225.28zm0 40.96H194.56c-28.278 0-51.2-22.922-51.2-51.2v-327.68c0-33.931 27.509-61.44 61.44-61.44h215.04c28.278 0 51.2 22.922 51.2 51.2v337.92c0 28.278-22.922 51.2-51.2 51.2zm382.976-531.456v470.016c0 11.309-9.171 20.48-20.48 20.48h-90.112c-11.309 0-20.48-9.171-20.48-20.48V481.569c0-11.311-9.169-20.48-20.48-20.48s-20.48 9.169-20.48 20.48v480.256c0 33.931 27.509 61.44 61.44 61.44h90.112c33.931 0 61.44-27.509 61.44-61.44V491.809c0-11.311-9.169-20.48-20.48-20.48s-20.48 9.169-20.48 20.48zm-464.896-153.6h40.96V39.201c0-32.811-29.218-49.355-57.35-32.483L271.8 36.56c-20.647 12.383-36.279 39.992-36.279 64.081v237.568h40.96V100.641c0-9.7 8.081-23.974 16.39-28.957l45.05-27.033v293.558zm288.154-296.96h222.452L815.253 315.26c-1.363 11.228 6.634 21.436 17.862 22.799s21.436-6.634 22.799-17.862l34.965-287.95v-1.239c0-16.963-13.757-30.72-30.72-30.72h-245.76c-16.963 0-30.72 13.757-30.72 30.72v1.271l35.997 289.005c1.398 11.224 11.63 19.19 22.854 17.792s19.19-11.63 17.792-22.854L626.073 41.249z" />
+                    </g>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="h3 card-title">Beleza</h3>
+                <p class="card-text">
+                  O mercado de produtos de beleza no Brasil é robusto, com uma variedade de marcas nacionais e
+                  internacionais. Os brasileiros valorizam cuidados com a pele, cabelo e maquiagem.
+                </p>
+                <img src="./assets/images/promo-3.png" width="300" height="300" loading="lazy" alt="French Fry"
+                  class="w-100 card-banner">
+              </div>
+            </li>
+            <li class="promo-item">
+              <div class="promo-card">
+                <div class="card-icon">
+                  <svg version="1.1" id="designs" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px" fill="none"
+                    viewBox="0 0 32 32" xml:space="preserve">
+                    <g fill="#ff9d2d">
+                      <path class="sketchy_een" d="M15.398,30.996c-0.886-0.014-1.769-0.028-2.655-0.057l-0.462-0.011
+                      c-0.246-0.005-0.492-0.01-0.737-0.021c-0.399-0.02-0.793-0.058-1.189-0.1c-0.186,0.108-0.33,0.157-0.475,0.157
+                      c-0.456,0-0.83-0.374-0.834-0.834c-0.016-1.318,0.059-2.659,0.131-3.956l0.059-1.095c0.053-1.053,0.117-1.858,0.206-2.608
+                      c0.113-0.976,0.257-1.958,0.429-2.919c0.156-0.868,0.36-1.751,0.607-2.624c0.126-0.455,0.26-0.907,0.401-1.357l0.092-0.292
+                      c0.104-0.331,0.208-0.663,0.334-0.986c0.32-0.822,0.72-1.665,1.261-2.651c0.415-0.76,0.811-1.527,1.203-2.299
+                      c-0.212-0.412-0.46-0.753-0.707-1.093l-0.248-0.346c-0.404-0.575-0.809-1.149-1.219-1.72h-0.049l-0.059,0.026
+                      c-0.018,0.549-0.035,1.097-0.049,1.645c-0.009,0.384-0.032,0.779,0.006,1.162c0.028,0.285,0.074,0.608-0.08,0.87
+                      c-0.116,0.198-0.308,0.346-0.527,0.406c-0.07,0.019-0.144,0.028-0.219,0.028c-0.356,0-0.779-0.224-0.862-0.641
+                      C9.662,9.224,9.669,8.74,9.676,8.272l0.003-0.414c-0.003-0.555-0.003-1.11,0.007-1.665L9.501,6.142H9.233
+                      c-0.187,0-0.368-0.01-0.553-0.045C8.408,6.046,8.159,5.873,8.015,5.633C7.727,5.15,7.772,4.539,7.811,4.001
+                      C7.844,3.537,7.842,3.082,7.84,2.624c0-0.301,0.09-0.504,0.253-0.657c0.119-0.33,0.409-0.543,0.735-0.55L9.837,1.4l0.792-0.006
+                      c0.595-0.002,1.191-0.004,1.787-0.036c0.455-0.024,0.909-0.06,1.364-0.095c0.434-0.034,0.867-0.068,1.302-0.092
+                      c0.852-0.047,1.703-0.069,2.557-0.083l0.736-0.008c0.595-0.004,1.19-0.009,1.796-0.044c0.113,0,0.183,0.025,0.257,0.052
+                      C20.592,1.028,20.706,1,20.818,1c0.217,0,0.431,0.089,0.588,0.244c0.167,0.168,0.218,0.359,0.244,0.594
+                      c0.026,0.268,0.004,0.552-0.019,0.825c-0.01,0.12-0.019,0.239-0.024,0.358c-0.018,0.414-0.04,0.83-0.074,1.245L21.52,4.401
+                      c-0.032,0.375-0.065,0.753-0.111,1.13l-0.016,0.136c-0.013,0.116-0.025,0.23-0.05,0.343c-0.057,0.258-0.168,0.477-0.36,0.711
+                      l-0.249,0.305c-0.398,0.531-0.768,1.082-1.139,1.631l-0.446,0.655l-0.028,0.073c0.014,0.029,0.02,0.063,0.027,0.098
+                      c0.414,0.737,0.792,1.409,1.167,2.083c0.477,0.854,0.841,1.747,1.134,2.507c0.336,0.879,0.661,1.729,0.927,2.582
+                      c0.155,0.487,0.281,0.983,0.4,1.481c0.165,0.237,0.225,0.509,0.17,0.743l0.067,0.32c0.175,0.854,0.32,1.716,0.453,2.576
+                      c0.051,0.326,0.085,0.654,0.12,0.982l0.048,0.452c0.048,0.422,0.095,0.844,0.123,1.268c0.043,0.619,0.108,1.235,0.171,1.85
+                      l0.067,0.642c0.031,0.32,0.055,0.642,0.079,0.963c0.033,0.445,0.067,0.891,0.119,1.333c0.01,0.062,0.018,0.12,0.022,0.176
+                      c0.012,0.184-0.023,0.336-0.106,0.478c-0.058,0.099-0.145,0.186-0.267,0.267c-0.057,0.215-0.126,0.358-0.229,0.461
+                      c-0.177,0.175-0.381,0.217-0.575,0.235c-0.333,0.034-0.663,0.038-0.996,0.038l-1.978,0.003c-0.7,0-1.399,0.008-2.1,0.031
+                      C17.264,30.977,16.567,31,15.868,31L15.398,30.996z M13.47,16.407c-0.349,0-0.699,0.019-1.048,0.039
+                      c-0.197,0.548-0.348,1.061-0.482,1.578c-0.164,0.639-0.284,1.282-0.403,1.939c-0.119,0.651-0.226,1.304-0.322,1.962
+                      c-0.088,0.696-0.161,1.393-0.211,2.09c-0.025,0.362-0.123,2.017-0.123,2.017c-0.072,1.056-0.113,2.113-0.142,3.173
+                      c0.678,0.113,1.31,0.154,1.946,0.184c0.841,0.041,1.683,0.059,2.526,0.059c0.911,0,1.822-0.021,2.733-0.053
+                      c0.849-0.03,1.698-0.044,2.549-0.053c0.66-0.006,1.325-0.014,1.986-0.048c0.012-0.377-0.016-0.701-0.042-1.023l-0.055-0.626
+                      l-0.076-0.743c-0.041-0.38-0.081-0.76-0.113-1.141l-0.053-0.686c-0.031-0.421-0.063-0.842-0.109-1.261
+                      c-0.062-0.573-0.13-1.146-0.198-1.72c-0.12-0.824-0.267-1.655-0.457-2.571c-0.449-0.062-0.85-0.073-1.253-0.084l-0.356-0.01
+                      c-0.904-0.025-1.807-0.075-2.712-0.124l-0.053-0.003l-0.017,0.097c-0.035,0.922-0.085,1.845-0.15,2.764l-0.032,0.517
+                      c-0.018,0.306-0.037,0.61-0.062,0.915l-0.018,0.229c-0.032,0.417-0.065,0.849-0.159,1.257c-0.077,0.34-0.239,0.661-0.482,0.953
+                      c-0.268,0.321-0.656,0.56-1.152,0.71c-0.511,0.156-1.059,0.203-1.577,0.238c0,0-0.002,0-0.003,0c-0.533,0-0.894-0.475-0.894-0.9
+                      c0-0.493,0.404-0.896,0.9-0.898c0.207-0.002,0.412-0.011,0.617-0.029c0.208-0.036,0.406-0.084,0.602-0.147l0.122-0.073l0.114-0.148
+                      c0.049-0.152,0.082-0.307,0.108-0.464c0.114-0.96,0.165-1.943,0.214-2.892l0.018-0.344c0.03-0.584,0.05-1.167,0.063-1.751
+                      c0.015-0.617-0.001-1.118-0.051-1.576c-0.064-0.34-0.138-0.618-0.233-0.877c-0.041-0.084-0.083-0.161-0.13-0.235l-0.12-0.081
+                      c-0.17-0.058-0.333-0.099-0.502-0.129C13.941,16.415,13.706,16.407,13.47,16.407z M14.077,14.624
+                      c0.274,0.005,0.631,0.023,0.963,0.111c0.306,0.085,0.563,0.205,0.763,0.356c0.241,0.182,0.399,0.345,0.529,0.544
+                      c0.112,0.172,0.187,0.343,0.267,0.533c0.146,0.351,0.247,0.752,0.317,1.26l0.874,0.092c0.689,0.043,3.091,0.182,3.091,0.182
+                      c-0.264-1.223-0.678-2.418-1.214-3.718c-0.463-1.081-1.046-2.089-1.778-3.271c-0.523-0.049-1.006-0.071-1.488-0.092l-1.083-0.049
+                      c-0.072-0.004-0.138-0.024-0.209-0.046l-0.521,0.801c-0.504,0.932-1.024,1.895-1.463,2.878c-0.033,0.081-0.164,0.45-0.164,0.45
+                      l0.404-0.015c0.197-0.008,0.394-0.017,0.591-0.017L14.077,14.624z M16.795,2.705c-0.791,0-1.581,0.01-2.372,0.046
+                      c-0.334,0.016-0.668,0.035-1.001,0.055c-0.547,0.031-1.094,0.064-1.643,0.08c-0.514,0.015-2.312,0.056-2.312,0.056L9.411,3.154
+                      C9.397,3.585,9.382,4.031,9.421,4.465c0.246,0.059,0.446,0.063,0.645,0.067l0.68,0.021c0.341,0.011,0.682,0.023,1.022,0.028
+                      c0.209,0.005,0.406,0.088,0.556,0.235c0.256,0.069,0.402,0.181,0.551,0.393c0.364,0.516,0.715,1.042,1.065,1.568l0.264,0.395
+                      l0.272,0.395c0.24,0.342,0.488,0.697,0.682,1.07L15.31,8.65l2.285,0.138c0.069-0.151,0.103-0.242,0.156-0.32l1.652-2.348
+                      c0.104-0.145,0.211-0.293,0.299-0.449c0.034-0.118,0.054-0.226,0.073-0.334c0.07-0.558,0.137-1.152,0.161-1.74
+                      c0.013-0.277,0.024-0.555,0.031-0.833l-0.273-0.051L16.795,2.705z" />
+                    </g>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="h3 card-title">Limpeza</h3>
+                <p class="card-text">
+                  O Brasil é o quarto maior mercado global de produtos de limpeza, com vendas de US$ 6,9 bilhões em
+                  2022. A previsão é que o consumo cresça 35% até 2027.
+                </p>
+                <img src="./assets/images/promo-4.png" width="300" height="300" loading="lazy" alt="Burger Kingo"
+                  class="w-100 card-banner">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="./assets/images/about-banner.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+
+            <img src="./assets/images/sale-shape-red.png" width="216" height="226" alt="get up to 50% off now"
+              class="abs-img scale-up-anim">
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Os melhores produtos em
+              <span class="span">um só lugar!</span>
+            </h2>
+
+            <p class="section-text">
+              O ambiente do La Bodega Empório é ideal para qualquer ocasião, seja um almoço casual, um jantar romântico
+              ou um encontro entre seis amigos. Com uma decoração que reflete a tradição e o acolhimento, o espaço
+              convida todos a desfrutar de momentos incríveis e memoráveis.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Bebidas, Vinhos & Espumantes</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Doces & Cereais</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Produtos de Beleza & Skincare</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Produtos de Limpeza</span>
+              </li>
+
+            </ul>
+
+            <button class="btn btn-hover">COMPRE AGORA</button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FOOD MENU
+      -->
+
+      <section class="section CATALOGO" id="CATALOGO">
+        <div class="container">
+            <h2 class="h2 section-title">
+                Veja nosso <span class="span">variado</span> catálogo
+            </h2>
+    
+            <div class="catalog-filters">
+                <select id="categoryFilter">
+                    <option value="todas">Todas as Categorias</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="alimentos">Alimentos</option>
+                    <option value="beleza">Beleza</option>
+                    <option value="higiene">Higiene</option>
+                </select>
+    
+                <select id="typeFilter">
+                    <option value="todos">Todos os Tipos</option>
+                </select>
+    
+                <select id="brandFilter">
+                    <option value="todas">Todas as Marcas</option>
+                </select>
+            </div>
+    
+            <div class="catalog-container" id="catalog">
+                <!-- Os produtos serão inseridos aqui dinamicamente -->
+            </div>
+
+            <!-- Modal para detalhes do produto -->
+            <div id="productModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-product-details">
+                        <img id="modalProductImage" src="" alt="Product Image">
+                        <div class="modal-product-info">
+                            <h3 id="modalProductName"></h3>
+                            <p id="modalProductCategory"></p>
+                            <p id="modalProductType"></p>
+                            <p id="modalProductBrand"></p>
+                            <p id="modalProductPrice"><span></span></p>
+                            <p id="modalProductDiscountPix"><span></span></p>
+                            <button id="reserveBtn">Reservar Produto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para reservar produto -->
+            <div id="reserveModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Reserva de Produto</h3>
+                    <form id="reservationForm">
+                        <label for="fullName">Nome Completo:</label>
+                        <input type="text" id="fullName" required>
+
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" required>
+
+                        <button type="submit">Reservar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="catalog-navigation">
+                <button id="prevBtn" class="nav-btn">←</button>
+                <button id="nextBtn" class="nav-btn">→</button>
+            </div>
+         </div>
+      </section>
+
+      <script src="./assets/js/catalogo.js" defer></script>
+
+      <!-- 
+        - #CTA
+      -->
+
+     
+
+
+
+
+      <!-- 
+        - #DELIVERY
+      -->
+
+      <section class="section section-divider gray delivery">
+        <div class="container">
+
+          <div class="delivery-content">
+
+            <h2 class="h2 section-title">
+              Gostaria de <span class="span">Reservar</span> nosso Espaço?
+            </h2>
+
+            <div class="mapBox">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.2546741955694!2d-45.89870276759324!3d-23.19738765989845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a73516e2ecf%3A0xbbfe36b763a3adc2!2sLa%20Bodega!5e0!3m2!1spt-BR!2sbr!4v1723466130814!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <form action="" class="footer-form">
+
+            <p class="footer-list-title">Venha nos Conhecer!</p>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="full_name" required placeholder="Seu Nome" aria-label="Your Name"
+                class="input-field">
+
+              <input type="email" name="email_address" required placeholder="E-mail" aria-label="Email"
+                class="input-field">
+
+            </div>
+
+            <div class="input-wrapper">
+
+              <select name="total_person" aria-label="Total de pessoas" class="input-field">
+                <option value="1 person">1 Pessoa</option>
+                <option value="2 person">2 Pessoas</option>
+                <option value="3 person">3 Pessoas</option>
+                <option value="4 person">4 Pessoas</option>
+                <option value="5 person">5 Pessoas</option>
+              </select>
+
+              <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+
+            </div>
+
+            <textarea name="message" required placeholder="Mensagem" aria-label="Message"
+              class="input-field"></textarea>
+
+            <button type="submit" class="btn">Reservar</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+
+
+
+     
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">
+            <img src="./assets/images/labodega.png">
+          </a>
+
+          <p class="footer-text">
+            Conheça nossas redes sociais e tire dúvidas conosco pelo nosso whatsapp.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Informações de contato</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">+55 12 99136-4820</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">labodega@labodega.com.br</p>
+          </li>
+
+          <li>
+            <address class="footer-list-item">Av. São João, 674 - Jardim Esplanada, São José dos Campos - SP, 12242-840
+            </address>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Horários de funcionamento</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Segunda à terça: 08:00-17:00</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Sábados: 08:00-12:00</p>
+          </li>
+
+
+        </ul>
+
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2024 <a href="#" class="copyright-link">La Bodega Empório</a> Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
